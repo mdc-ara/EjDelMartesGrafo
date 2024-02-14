@@ -8,6 +8,14 @@ package es.medac.ejdelmartesgrafo;
 public class EjDelMartesGrafo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        FriendshipGraph g = new FriendshipGraph();
+        
+        g.addVertex("Alice");
+        g.addVertex("Bob");
+        g.addVertex("Charlie");
+        g.addEdge("Alice","Bob");
+        g.addEdge("Bob", "Charlie");
+        
+        g.printGraph();
     }
 }
