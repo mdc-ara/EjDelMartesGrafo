@@ -14,10 +14,21 @@ public class FriendshipGraph extends Graph {
         vertices = new String[MAXV];
         aristas = new int[MAXV][MAXV];
         vertexCount=0;
+        for(int i=0;i<vertexCount;i++){
+            for(int ii=0;ii<vertexCount;ii++){
+                aristas[i][ii]==0;
+            }
+        }
     }
 
     @Override
     public void addVertex(String l1) {
+        if(vertexCount>=MAXV){
+            System.err.println("Grafo lleno");
+            return;
+        }
+        vertices[vertexCount]=l1;
+        vertexCount++;
     }
 
     @Override
@@ -26,5 +37,14 @@ public class FriendshipGraph extends Graph {
 
     @Override
     public void printGraph() {
+        for(int i=0;i<vertexCount;i++){
+            System.out.print(vertices[i] + " tiene amistad con:");
+            for(int ii=0;ii<vertexCount;ii++){
+                if(aristas[i][ii]==1){
+                    System.out.print(" "+vertices[ii]);
+                }
+            }
+            System.out.println();
+        }
     }
 }
