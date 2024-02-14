@@ -31,8 +31,27 @@ public class FriendshipGraph extends Graph {
         vertexCount++;
     }
 
+    // Devuelve la posición de l1 en el vector o un índice imposible del si no lo encuentra
+    private int buscaPos(String l1){
+        for(int i=0;i<vertexCount;i++){
+            if(vertices[i].equals(l1)){
+                return(i);
+            }
+        }
+        return(-1);
+    }
+    
     @Override
     public void addEdge(String l1, String l2) {
+        int posl1 = buscaPos(l1);
+        int posl2 = buscaPos(l2);
+        
+        if(posl1 == -1 || posl2 == -1 ){
+            System.err.println("Algún vértice no existe");
+            return();
+        }
+        aristas[posl1][posl2]=1;
+        aristas[posl2][posl1]=1;        
     }
 
     @Override
