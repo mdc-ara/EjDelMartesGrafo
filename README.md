@@ -1,6 +1,6 @@
-Los "Ejercicios del Martes" forman parte del curso de Programación de 1º de CFGS de DAM. Está pensado para ser desarrollado en papel.
+Los *Ejercicios del Martes* forman parte del curso de Programación de 1º de CFGS de DAM. Están diseñados para ser desarrollado en papel.
 
-Ejercicio: Red de amigos
+**Ejercicio: Red de amigos**
 
 Imagina que estás construyendo una red social para conectar amigos. En esta red, una conexión entre dos personas significa que son amigas. La relación de amistad es recíproca; es decir, si Alice es amiga de Bob, Bob también es amigo de Alice. Este tipo de relación se puede representar mediante un grafo no dirigido, donde cada persona es un nodo(vértice) y cada relación de amistad es una arista que conecta dos nodos.
 
@@ -27,3 +27,5 @@ public static void main(String[] args) {
     graph.printGraph();
 }
 ```
+Hay dos ramas, en una una solución con arrays, en otra con Collections.
+*Nota:* Se han dejado errores intencionadamente para que sean descubiertos en la fase de pruebas.
