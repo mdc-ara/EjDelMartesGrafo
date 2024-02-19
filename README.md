@@ -28,4 +28,5 @@ public static void main(String[] args) {
 }
 ```
 Hay dos ramas, en una una solución con arrays, en otra con Collections.
+
 *Nota:* Se han dejado errores intencionadamente para que sean descubiertos en la fase de pruebas.
