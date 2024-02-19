@@ -2,6 +2,8 @@ Los *Ejercicios del Martes* forman parte del curso de Programación de 1º de CF
 
 **Ejercicio: Red de amigos**
 
+![grafo acíclico](img/acigraph.svg)
+
 Imagina que estás construyendo una red social para conectar amigos. En esta red, una conexión entre dos personas significa que son amigas. La relación de amistad es recíproca; es decir, si Alice es amiga de Bob, Bob también es amigo de Alice. Este tipo de relación se puede representar mediante un grafo no dirigido, donde cada persona es un nodo(vértice) y cada relación de amistad es una arista que conecta dos nodos.
 
 Dada la clase abstracta:
