@@ -29,6 +29,6 @@ public static void main(String[] args) {
     graph.printGraph();
 }
 ```
-Hay dos ramas, en una una solución con arrays, en otra con Collections.
+<ins>Hay dos ramas</ins>, en una una solución con <ins>arrays</ins>, en otra con <ins>Collections</ins>.
 
 *Nota:* Se han dejado errores intencionadamente para que sean descubiertos en la fase de pruebas.
